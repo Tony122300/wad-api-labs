@@ -55,7 +55,9 @@ router.post('/:userName/favourites', asyncHandler(async (req, res) => {
     const userName = req.params.userName;
     const movie = await movieModel.findByMovieDBId(newFavourite);
     const user = await User.findByUserName(userName);
-    await user.favourites.push(movie._id);
+       // to remove duplicate
+       if(await user.favourites.includes(movie.id))
+       await user.favourites.push(movie._id);
     await user.save(); 
     res.status(201).json(user); 
   }));
