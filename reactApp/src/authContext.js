@@ -41,6 +41,7 @@ const AuthContextProvider = (props) => {
         authenticate,
         register,
         signout,
+        authToken,
         userName
       }}
     >
