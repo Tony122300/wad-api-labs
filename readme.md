@@ -21,6 +21,16 @@ Describe getting/installing the software, perhaps:
 
 ```bat
 git clone http:\myrepo.git
+npm install -save mongoose             
+npm install --save express-session    
+npm install --save-dev nodemon  
+npm install --save-dev babel-preset-env  
+npm install --save-dev babel-cli  
+npm install express-async-handler --save   
+npm install -s node-fetch@2    
+npm install --save dotenv express  
+npm install --save-dev babel-cli babel-preset-env nodemon eslint babel-eslint
+npm start
 ```
 
 followed by installation
